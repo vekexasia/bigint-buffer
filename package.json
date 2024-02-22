@@ -7,7 +7,8 @@
     "lint": "npx eslint --ext .ts src test",
     "test": "jest --coverage",
     "pretest": "npm run build",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "prepublishOnly": "npm run test"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

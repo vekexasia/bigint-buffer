@@ -1,8 +1,13 @@
 {
+  "name": "@vekexasia/bigint-buffer",
+  "version": "2.0.0",
+  "description": "A library to convert bigint to and from buffers with Buffer polyfills and support for uint/int",
   "scripts": {
     "build": "rm -rf dist/ ; tsc -p ./tsconfig.build.json",
     "lint": "npx eslint --ext .ts src test",
-    "tests": "jest --coverage"
+    "test": "jest --coverage",
+    "pretest": "npm run build",
+    "posttest": "npm run lint"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,5 +29,14 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.7.1",
     "typescript": "*"
-  }
+  },
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "author": {
+    "url": "https://www.andreabaccega.com/",
+    "email": "vekexasia@gmail.com",
+    "name": "Andrea Baccega"
+  },
+  "license": "MIT"
 }

@@ -1,5 +1,6 @@
 import '@/buffers'
 import { BELEs } from './intcases'
+import { describe, it, expect } from 'vitest'
 
 describe('buffer', () => {
   describe('int', () => {
